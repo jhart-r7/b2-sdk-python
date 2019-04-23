@@ -37,9 +37,10 @@ Public interface consists of *public* members of the following modules:
 Those will not change in a backwards-incompatible way between non-major versions. In other words, if you pin your dependencies to `>=x.0.0;<x+1.0.0`, everything should be ok.
 In other words, if you pin your dependencies to
 
-.. hint:: If the current version of b2sdk is 4.5.6 and you only use the public interfaces, put this in your requirements.txt::
-  
-    b2sdk>=4.5.6,<5.0.0
+.. hint::
+    If the current version of b2sdk is 4.5.6 and you only use the public interfaces, put this in your requirements.txt::
+
+        b2sdk>=4.5.6,<5.0.0
 
 .. note:: b2sdk.*._something and b2sdk.*.*._something, having a name which begins with an underscore, are NOT considred public interface.
 
@@ -58,9 +59,10 @@ Things which sometimes might be necssary to use that are NOT considered public i
 
 .. note:: it is ok for you to use those (better that, than copying our sources), however if you do, please pin your dependencies to middle version.
 
-.. hint:: If the current version of b2sdk is 4.5.6 and you use the public and protected interfaces, put this in your requirements.txt::
-  
-    b2sdk>=4.5.6,<4.6.0
+.. hint::
+    If the current version of b2sdk is 4.5.6 and you use the public and protected interfaces, put this in your requirements.txt::
+
+        b2sdk>=4.5.6,<4.6.0
 
 
 Private
@@ -68,7 +70,8 @@ Private
 
 If you need to use some of our private interfaces, pin your dependencies strictly.
 
-.. hint:: If the current version of b2sdk is 4.5.6 and you use the private interface, put this in your requirements.txt::
-  
-    b2sdk==4.5.6
+.. hint::
+    If the current version of b2sdk is 4.5.6 and you use the private interface, put this in your requirements.txt::
+
+        b2sdk==4.5.6
 
